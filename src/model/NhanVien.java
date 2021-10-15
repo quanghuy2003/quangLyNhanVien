@@ -3,13 +3,13 @@ package model;
 public class NhanVien extends Nguoi {
     private double salary;
 
-    public NhanVien(int id, String name, String age, double salary) {
+    public NhanVien(int id, String name, int age, double salary) {
         super(id, name, age);
         this.salary = salary;
     }
 
-    public NhanVien(double salary) {
-        this.salary = salary;
+    public NhanVien() {
+
     }
 
     public double getSalary() {
@@ -20,13 +20,11 @@ public class NhanVien extends Nguoi {
         this.salary = salary;
     }
 
-    public NhanVien(String huy, int i, int i1) {
-    }
 
     @Override
     public String toString() {
-        return "NhanVien{name +" + getName() + " ,tuổi = " + getSalary() +
-                "lương =" + salary +
+        return "NhanVien{name " + getName() + " , tuổi = " + getAge() +
+                ", lương =" + salary +
                 '}';
     }
 }

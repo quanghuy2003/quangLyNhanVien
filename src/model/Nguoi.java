@@ -3,9 +3,9 @@ package model;
 public abstract class Nguoi {
     private int id;
     private String name;
-    private String age;
+    private int age;
 
-    public Nguoi(int id, String name, String age) {
+    public Nguoi(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -27,11 +27,11 @@ public abstract class Nguoi {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

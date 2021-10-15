@@ -3,13 +3,13 @@ package sercice;
 import model.NhanVien;
 
 public class QuanLyNhanVien implements QuanLy<NhanVien>{
-     private NhanVien[] DanhSach = new NhanVien[3];
+     private NhanVien[] danhSach = new NhanVien[3];
      private int size = 0;
 
 
     @Override
     public void them(NhanVien nhanVien) {
-       DanhSach[size] = nhanVien;
+       danhSach[size] = nhanVien;
        size++;
     }
 
@@ -31,13 +31,13 @@ public class QuanLyNhanVien implements QuanLy<NhanVien>{
 
     public void print(){
         for (int i = 0; i < size; i++) {
-            System.out.println(DanhSach[i]);
+            System.out.println(danhSach[i]);
         }
     }
 
     public static void main(String[] args) {
         QuanLyNhanVien ql = new QuanLyNhanVien();
-        NhanVien nv1 = new NhanVien("huy",18,100000);
+        NhanVien nv1 = new NhanVien(1,"huy",18,100000);
         ql.them(nv1);
         ql.print();
     }

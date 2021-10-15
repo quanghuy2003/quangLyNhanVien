@@ -3,7 +3,7 @@ package model;
 public class GiamDoc extends Nguoi {
     private double soLuongNhanVien;
 
-    public GiamDoc(int id, String name, String age, double soLuongNhanVien) {
+    public GiamDoc(int id, String name, int age, double soLuongNhanVien) {
         super(id, name, age);
         this.soLuongNhanVien = soLuongNhanVien;
     }
